@@ -51,7 +51,6 @@ HEADERS += \
     ../Lib/safelineedit.h \
     ../Lib/supportfunctions.h \
     ../Lib/alertsound.h \
-    ../Lib/version.h \
     ../Lib/warningform.h \
     ../Lib/warningok.h \
     ../Lib/warningyesno.h \
