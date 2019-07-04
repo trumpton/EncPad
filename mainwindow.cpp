@@ -2,7 +2,6 @@
 #include "ui_mainwindow.h"
 
 #include <QFileDialog>
-#include "version.h"
 #include "../Lib/supportfunctions.h"
 #include "../Lib/warningok.h"
 #include "../Lib/warningyesno.h"
@@ -141,10 +140,9 @@ void MainWindow::on_action_Save_triggered()
 void MainWindow::on_action_About_triggered()
 {
     QString text =
-    QString("Encrypt Pad Release %1.\n").arg(BUILDVERSION) +
-    QString("It was built on: %1.\n\n").arg(buildDate()) +
-    QString("Encrypt Pad Repository Version: %1.\n").arg(appHash()) +
-    QString("Library Repository Version: %1.\n").arg(libVersion()) ;
+    QString("Encrypt Pad Version: %1.\n").arg(appHash()) +
+    QString("Library Version: %1.\n").arg(libVersion()) +
+    QString("It was built on: %1.\n\n").arg(buildDate()) ;
 
     warningOkDialog(this, QString("About Encrypt Pad"), text)  ;
 
