@@ -56,6 +56,9 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 
+# dialogfocus.cpp calls user32 functions (AttachThreadInput, SetForegroundWindow) on Windows
+win32: LIBS += -luser32
+
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
