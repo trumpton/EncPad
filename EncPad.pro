@@ -61,7 +61,9 @@ SOURCES += \
         mainwindow.cpp \
     ../Lib/aes.cpp \
     ../Lib/encryption.cpp \
-    ../Lib/safelineedit.cpp \
+    ../Lib/alineedit.cpp \
+    ../Lib/atextedit.cpp \
+    ../Lib/dialogfocus.cpp \
     ../Lib/supportfunctions.cpp \
     ../Lib/alertsound.cpp \
     ../Lib/warningform.cpp \
@@ -72,7 +74,9 @@ HEADERS += \
         mainwindow.h \
     ../Lib/aes.h \
     ../Lib/encryption.h \
-    ../Lib/safelineedit.h \
+    ../Lib/alineedit.h \
+    ../Lib/atextedit.h \
+    ../Lib/dialogfocus.h \
     ../Lib/supportfunctions.h \
     ../Lib/alertsound.h \
     ../Lib/warningform.h \
